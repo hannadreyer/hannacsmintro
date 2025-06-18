@@ -466,7 +466,7 @@ export default function CSMIntroPage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h3 className="text-xl font-semibold mb-2">Hanna Dreyer</h3>
-              <p className="text-gray-400">Customer Success Manager at Vercel</p>
+              <p className="text-gray-400">Customer Success Manager</p>
               <p className="text-gray-400 text-sm">Munich, Germany</p>
               <p className="text-gray-400 text-sm">dreyer.hanna@gmail.com</p>
             </div>
