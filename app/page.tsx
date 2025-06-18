@@ -1,3 +1,5 @@
+"use client"
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,7 +19,6 @@ import {
   Lightbulb,
   Code,
 } from "lucide-react"
-;("use client")
 
 export default function CSMIntroPage() {
   return (
