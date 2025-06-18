@@ -14,7 +14,10 @@ import {
   Waves,
   Camera,
   Globe,
+  Lightbulb,
+  Code,
 } from "lucide-react"
+;("use client")
 
 export default function CSMIntroPage() {
   return (
@@ -187,6 +190,108 @@ export default function CSMIntroPage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What I Have Recently Learned Section */}
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full mb-6">
+                <Lightbulb className="h-8 w-8 text-white" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">What I Have Recently Learned</h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                I believe in continuous growth and staying at the forefront of both personal and professional
+                development. Here are some recent skills and knowledge I've acquired.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-blue-100 p-3 rounded-full">
+                      <Waves className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Efficient Breaststroke Technique</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    Mastered the fundamentals of efficient breaststroke swimming, focusing on proper body positioning,
+                    timing, and energy conservation techniques that will be crucial for my upcoming 2.2km lake crossing
+                    challenge.
+                  </p>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-blue-600">•</span>
+                      <span>Streamlined body position to reduce drag and improve glide efficiency</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-blue-600">•</span>
+                      <span>Coordinated breathing patterns to maintain rhythm during long-distance swims</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-blue-600">•</span>
+                      <span>Energy-saving stroke techniques for endurance swimming in open water</span>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <Badge variant="outline" className="bg-blue-50">
+                      Swimming Technique
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 ml-2">
+                      Endurance Training
+                    </Badge>
+                    <Badge variant="outline" className="bg-blue-50 ml-2">
+                      Open Water
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="bg-purple-100 p-3 rounded-full">
+                      <Code className="h-6 w-6 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold">v0 by Vercel</h3>
+                  </div>
+                  <p className="text-gray-600 mb-4">
+                    Explored v0, Vercel's AI-powered development tool that generates React components and full
+                    applications from natural language prompts. This revolutionary approach to rapid prototyping aligns
+                    perfectly with modern development workflows.
+                  </p>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-purple-600">•</span>
+                      <span>Natural language to React component generation using AI</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-purple-600">•</span>
+                      <span>Integration with shadcn/ui components and Tailwind CSS</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-medium text-purple-600">•</span>
+                      <span>Rapid prototyping and iteration capabilities for customer demos</span>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <Badge variant="outline" className="bg-purple-50">
+                      AI Development
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 ml-2">
+                      React
+                    </Badge>
+                    <Badge variant="outline" className="bg-purple-50 ml-2">
+                      Rapid Prototyping
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
