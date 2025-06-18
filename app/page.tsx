@@ -29,7 +29,7 @@ export default function CSMIntroPage() {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Hi, I'm <span className="text-blue-400">Hanna Dreyer</span>
                 <br />
-                <span className="text-2xl md:text-4xl text-gray-300">Your Future Success Partner at Vercel</span>
+                <span className="text-2xl md:text-4xl text-gray-300">Your Future Success Partner</span>
               </h1>
               <p className="text-xl text-gray-300 mb-6 max-w-2xl">
                 With a PhD in Knowledge Management in Software Development Projects and extensive experience at
@@ -484,7 +484,7 @@ export default function CSMIntroPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Hanna Dreyer. Empowering success through expertise and dedication.</p>
+            <p>&copy; 2025 Hanna Dreyer - Empowering success through expertise and dedication.</p>
           </div>
         </div>
       </footer>
