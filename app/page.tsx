@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Mail,
   Linkedin,
-  Twitter,
   Calendar,
   BookOpen,
   Plane,
@@ -58,9 +57,11 @@ export default function CSMIntroPage() {
                     Schedule a Call
                   </a>
                 </Button>
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Get in Touch
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+                  <a href="mailto:dreyer.hanna@gmail.com">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Get in Touch
+                  </a>
                 </Button>
               </div>
             </div>
@@ -448,9 +449,12 @@ export default function CSMIntroPage() {
             <Button
               size="lg"
               className="bg-white text-blue-600 hover:bg-gray-100 hover:text-purple-600 transition-colors"
+              asChild
             >
-              <Mail className="mr-2 h-5 w-5" />
-              Send a Message
+              <a href="mailto:dreyer.hanna@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Send a Message
+              </a>
             </Button>
           </div>
         </div>
@@ -464,16 +468,18 @@ export default function CSMIntroPage() {
               <h3 className="text-xl font-semibold mb-2">Hanna Dreyer</h3>
               <p className="text-gray-400">Customer Success Manager at Vercel</p>
               <p className="text-gray-400 text-sm">Munich, Germany</p>
+              <p className="text-gray-400 text-sm">dreyer.hanna@gmail.com</p>
             </div>
             <div className="flex space-x-6">
-              <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-600">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-600" asChild>
+                <a href="https://www.linkedin.com/in/hanna-dreyer/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-600">
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-600">
-                <Mail className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-blue-400 hover:text-blue-600" asChild>
+                <a href="mailto:dreyer.hanna@gmail.com">
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
